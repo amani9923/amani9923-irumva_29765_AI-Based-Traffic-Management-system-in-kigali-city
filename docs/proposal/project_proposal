@@ -19,3 +19,9 @@ The system will store and organize livestock-related information and generate re
 It will focus on analyzing available information about cattle, goats, sheep, pigs, and poultry, as well as products such as milk, meat, and eggs.
 
 
+Proposed Solution
+
+The proposed system will provide a central database for storing and managing livestock production information. Users will be able to record and view information about livestock types, agricultural households or farms, locations, animal populations, and production records. The system will also calculate selected productivity indicators, such as average milk production per cow and changes in production over time.
+
+The system will generate reports that compare livestock production by animal type, location, and reporting period. It will use PL/SQL procedures, functions, triggers, cursors, and exception handling to manage records, apply business rules, and calculate production indicators. An interactive dashboard will present important results in a clear format.
+
