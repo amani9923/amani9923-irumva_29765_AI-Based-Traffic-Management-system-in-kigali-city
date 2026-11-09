@@ -8,8 +8,14 @@ Instructor: Eric Maniraguha
 
 
 1. Problems statement
-Livestock farming is an important part of agriculture in Rwanda. It provides milk, meat, eggs, income, and employment for many households. However, analyzing livestock production and productivity can be difficult when information about animal populations, production levels, and farming activities is stored in different records or reports. Without a well-organized system, it can be difficult to compare production across livestock types, districts, and years or to identify changes in productivity.
+Livestock farming is an important part of agriculture in Rwanda.
+It provides milk, meat, eggs, income, and employment for many households. However, 
+analyzing livestock production and productivity can be difficult when information about animal populations, 
+production levels, and farming activities is stored in different records or reports. Without a well-organized system, 
+it can be difficult to compare production across livestock types, districts, and years or to identify changes in productivity.
 
-This project aims to develop a Livestock Production and Productivity Analysis System using Oracle Database and PL/SQL. The system will store and organize livestock-related information and generate reports that help users understand production levels and productivity trends. It will focus on analyzing available information about cattle, goats, sheep, pigs, and poultry, as well as products such as milk, meat, and eggs.
+This project aims to develop a Livestock Production and Productivity Analysis System using Oracle Database and PL/SQL. 
+The system will store and organize livestock-related information and generate reports that help users understand production levels and productivity trends. 
+It will focus on analyzing available information about cattle, goats, sheep, pigs, and poultry, as well as products such as milk, meat, and eggs.
 
 
