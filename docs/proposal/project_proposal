@@ -6,53 +6,74 @@ Student ID: 29765
 Course: INSY 8311 – Database Development with PL/SQL
 Instructor: Eric Maniraguha
 
+Problem Statement
+Livestock farming is essential for food security and rural income, 
+but small and medium-scale farms often struggle with low productivity.
+Most farmers do not track data systematically; instead, animal lineage, 
+health history, breeding cycles, and feed records are kept in manual logs or not recorded at all.
+This makes it hard to find the root causes of low yields, such as poor-performing breeds or high feed costs. 
+Without a central system, managers cannot see real-time drops in milk or meat production, 
+making it difficult to make profitable adjustments or plan for the future.
 
-1. Problems statement
-Livestock farming is an important part of agriculture in Rwanda.
-It provides milk, meat, eggs, income, and employment for many households. However, 
-analyzing livestock production and productivity can be difficult when information about animal populations, 
-production levels, and farming activities is stored in different records or reports. Without a well-organized system, 
-it can be difficult to compare production across livestock types, districts, and years or to identify changes in productivity.
+Proposed Solution
 
-This project aims to develop a Livestock Production and Productivity Analysis System using Oracle Database and PL/SQL. 
-The system will store and organize livestock-related information and generate reports that help users understand production levels and productivity trends. 
-It will focus on analyzing available information about cattle, goats, sheep, pigs, and poultry, as well as products such as milk, meat, and eggs.
+This project builds a central Oracle database with PL/SQL to track and analyze livestock lifecycles and farm yields. 
+The system will store profiles for each animal, including family history, medical treatments, feed use, and daily production outputs. 
+By using built-in database rules, the system ensures data remains accurate and error-free. 
+It will also use automated PL/SQL programs to calculate farm performance metrics, send alerts, and 
+create clean reports for managers, turning raw data into clear steps to improve breeding and feed efficiency.
 
 
-2.Proposed Solution
+Data Source
+The system will use an open-source dataset from Kaggle containing real agricultural records for over 500 animals. 
+It includes details like animal IDs, breeds, birth dates, feed intake, health records, and daily milk or meat weights. 
+All personal information and specific farm names have been removed to protect privacy and follow educational rules.
 
-The proposed system will provide a central database for storing and managing livestock production information. 
-Users will be able to record and view information about livestock types, agricultural households or farms, 
-locations, animal populations, and production records. The system will also calculate selected productivity indicators, 
-such as average milk production per cow and changes in production over time.
 
-The system will generate reports that compare livestock production by animal type, location, 
-and reporting period. It will use PL/SQL procedures, functions, triggers, cursors, and exception handling to manage records, 
-apply business rules, and calculate production indicators. An interactive dashboard will present important results in a clear format.
+Planned Tables
 
-3. Planned Database Tables
-The system is expected to include the following tables:
-Farm – stores farm or agricultural household identification and location information.
-Location – stores province, district, and sector information.
-Livestock_Type – stores livestock categories such as cattle, goats, sheep, pigs, and poultry.
-Livestock_Population – stores the number of animals by type, farm or area, and reporting period.
-Production_Record – stores production information for milk, meat, eggs, and other available livestock products.
-Product_Type – stores the different livestock products and their units of measurement.
-Reporting_Period – stores the year or period associated with each record.
+FARM_UNITS: Tracks the different barns or sections of the farm.
+ LIVESTOCK_REGISTRY: Stores animal profiles, including Tag ID, breed, birth date, gender, and parents' IDs.
+ PRODUCTION_LOG: Records daily milk or meat collection times and weights.
+ HEALTH_INTERVENTIONS: Tracks medical history, treatments, drug dosages, and the treating veterinarian.
+ BREEDING_LOG: Logs insemination dates, sire details, pregnancy check dates, and expected birth dates.
+ FEED_CONSUMPTION: Monitors daily feed types, costs, and amounts given to each section or group.
 
-4. Planned PL/SQL Features
-Stored Procedures: To insert, update, and manage livestock and production records.
-Functions: To calculate productivity indicators, production totals, and average production.
-Triggers: To validate selected records and maintain automatic database updates when required.
-Cursors: To process and summarize production records for reports.
-Collections and Records: To organize and process groups of livestock and production information.
-Exception Handling: To manage invalid entries, missing records, and other database errors.
-Bulk Processing: To process multiple production records efficiently.
+Planned PL/SQL Features
 
-Expected Results
-The project is expected to produce a working Oracle database system that organizes livestock production information and supports productivity analysis. 
-It will provide reports and an interactive dashboard to help users compare production, observe trends, and 
-identify areas that may require further attention.
+Stored Procedure (LOG_DAILY_YIELD): Takes an animal's Tag ID and yield weight to safely save 
+the daily records into the PRODUCTION_LOG.
+ Stored Function (GET_FEED_EFFICIENCY): Compares an animal's feed intake against
+its production output to calculate its Feed Conversion Ratio (FCR).
+ Cursor Implementation (GENERATE_HEALTH_REPORT): Loops through the health table inside a management package to 
+list animals currently under medication restrictions, keeping unsafe products out of delivery.
+
+ Database Trigger (VALIDATE_BREEDING_AGE): Checks the animal's birth date before allowing a new entry in the BREEDING_LOG 
+to prevent breeding animals that are too young.
+ Exception Handling: Standard error catchers in every program to block duplicate entries
+or negative yield numbers and save errors to an audit log.
+
+
+Innovation
+
+To make the database easy to use without writing SQL queries, 
+a live Power BI Analytics Dashboard will connect directly to the Oracle database. 
+This dashboard will display key metrics through clear charts, showing daily yield trends, 
+comparing which breeds produce the most, and tracking feed costs against income. 
+This gives managers a fast, visual way to see their best animals and make business decisions
+
+
+tracking feed costs against income. This gives managers a fast, visual way to see their best animals and make business decisions.
+References
+> Food and Agriculture Organization. (2023). Global livestock production systems and data tracking metrics. 
+FAO Animal Production and Health Reports.
+> Kaggle Datasets. (2024). Dairy farming and livestock productivity records
+for academic research. Retrieved from kaggle.com
+> Oracle Corporation. (2024). Database PL/SQL language reference (Release 23c). Oracle Help Center.
+
+
+
+
 
 
 
