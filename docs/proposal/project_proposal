@@ -50,8 +50,9 @@ Exception Handling: To manage invalid entries, missing records, and other databa
 Bulk Processing: To process multiple production records efficiently.
 
 Expected Results
-
-The project is expected to produce a working Oracle database system that organizes livestock production information and supports productivity analysis. It will provide reports and an interactive dashboard to help users compare production, observe trends, and identify areas that may require further attention.
+The project is expected to produce a working Oracle database system that organizes livestock production information and supports productivity analysis. 
+It will provide reports and an interactive dashboard to help users compare production, observe trends, and 
+identify areas that may require further attention.
 
 
 
