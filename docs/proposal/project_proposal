@@ -1,5 +1,5 @@
 PROJECT PROPOSAL
-Project Title: AI-Based Traffic Management System for Kigali City, Rwanda
+Project Title: Livestock Production and Productivity Analysis System
 
 Student Name: Irumva  Amani
 Student ID: 29765
@@ -8,29 +8,8 @@ Instructor: Eric Maniraguha
 
 
 1. Problems statement
+Livestock farming is an important part of agriculture in Rwanda. It provides milk, meat, eggs, income, and employment for many households. However, analyzing livestock production and productivity can be difficult when information about animal populations, production levels, and farming activities is stored in different records or reports. Without a well-organized system, it can be difficult to compare production across livestock types, districts, and years or to identify changes in productivity.
 
-Traffic congestion and poor traffic flow are challenges affecting transportation in Kigali City. 
-Heavy traffic, roadside activities and traffic rule violations can contribute to delays, 
-increased travel time and road safety problems. 
-These conditions make it difficult for road users and traffic authorities to manage traffic effectively.
-Research conducted in Kigali has examined traffic congestion, 
-roadside friction and traffic compliance. However, 
-there is a need for an organized system that stores traffic information, 
-analyzes traffic patterns and provides useful information to support traffic management decisions.
-
-
-2. Proposed Solution
-This project proposes an AI Traffic Management System for Kigali City, Rwanda. 
-The system will use Oracle Database and PL/SQL to store and manage traffic information.
-Artificial intelligence techniques will be used to analyze available traffic data and identify patterns that can support traffic management.
-
-The system will aim to:
-
-Store and organize traffic information from selected locations in Kigali.
-Analyze traffic volume, traffic compliance and other available traffic indicators.
-Identify traffic patterns and possible congestion levels using suitable AI techniques.
-Compare traffic conditions across selected locations.
-Generate reports to support traffic management decisions.
-
+This project aims to develop a Livestock Production and Productivity Analysis System using Oracle Database and PL/SQL. The system will store and organize livestock-related information and generate reports that help users understand production levels and productivity trends. It will focus on analyzing available information about cattle, goats, sheep, pigs, and poultry, as well as products such as milk, meat, and eggs.
 
 
