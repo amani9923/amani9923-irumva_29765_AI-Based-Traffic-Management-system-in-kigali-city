@@ -30,5 +30,33 @@ The system will generate reports that compare livestock production by animal typ
 and reporting period. It will use PL/SQL procedures, functions, triggers, cursors, and exception handling to manage records, 
 apply business rules, and calculate production indicators. An interactive dashboard will present important results in a clear format.
 
+3. Planned Database Tables
+The system is expected to include the following tables:
+Farm – stores farm or agricultural household identification and location information.
+Location – stores province, district, and sector information.
+Livestock_Type – stores livestock categories such as cattle, goats, sheep, pigs, and poultry.
+Livestock_Population – stores the number of animals by type, farm or area, and reporting period.
+Production_Record – stores production information for milk, meat, eggs, and other available livestock products.
+Product_Type – stores the different livestock products and their units of measurement.
+Reporting_Period – stores the year or period associated with each record.
+
+4. Planned PL/SQL Features
+Stored Procedures: To insert, update, and manage livestock and production records.
+Functions: To calculate productivity indicators, production totals, and average production.
+Triggers: To validate selected records and maintain automatic database updates when required.
+Cursors: To process and summarize production records for reports.
+Collections and Records: To organize and process groups of livestock and production information.
+Exception Handling: To manage invalid entries, missing records, and other database errors.
+Bulk Processing: To process multiple production records efficiently.
+
+Expected Results
+
+The project is expected to produce a working Oracle database system that organizes livestock production information and supports productivity analysis. It will provide reports and an interactive dashboard to help users compare production, observe trends, and identify areas that may require further attention.
+
+
+
+
+
+
 
 
